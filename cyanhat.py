@@ -22,24 +22,21 @@ def domain():
     f= input("URL:")
     dom=str("site:"+f)
     print(dom)
-    results = engine.search(dom)
-    links = results.links()
+    *************
     print(links)
         
 def filetype():
     filetype= input("Filetype: ")
     if filetype == "pdf":
         l=str("inurl:pdf")
-        results = engine.search(l,pages=1)
-        links = results.links()
+        *************
         print(" ")
         print(links)
         print(" ")
     else:
         ext=str("inurl: ext:"+filetype)
         print(ext)
-        results = engine.search(ext,pages=1)
-        links = results.links()
+        *****************
         print(" ")
         print(links)
         print(" ")
@@ -49,8 +46,7 @@ def keyword():
     f= input("Word:")
     dom=str("allintext:"+f)
     print(dom)
-    results = engine.search(dom)
-    links = results.links()
+    *************
     print(links)
 
 
